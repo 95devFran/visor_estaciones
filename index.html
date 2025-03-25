@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Madrid - Estaciones y Vías</title>
+  
+  <!-- CSS: Leaflet y Plugins -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="leaflet-search-master/src/leaflet-search.css" />
+  
+  <!-- CSS de Leaflet.Measure -->
+  <link rel="stylesheet" href="Leaflet.Measure-master/src/leaflet.measure.css"/>
+
+  <!--Full Screen Mode-->
+  <link rel="stylesheet" href="./full.screen/Control.FullScreen.css"/>
+
+  <!-- CSS: Estilos personalizados -->
+  <link rel="stylesheet" href="style_vias.css" />
+</head>
+<body>
+
+  <!-- Título del Mapa -->
+  <div class="titulo">
+    <h1>Mapa de Estaciones y Vías de Tren de Madrid</h1>
+  </div>
+
+  <!-- Contenedor del Mapa -->
+  <div id="map"></div>
+
+  <!-- Carga de JS: Leaflet y Plugins -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!--Search Bar Control-->
+  <script src="leaflet-search-master/src/leaflet-search.js"></script>
+  <!--Full Screen Mode JS-->
+  <script src="./full.screen/Control.FullScreen.js"></script>
+      <!--Medir distancias-->
+  <script src="Leaflet.Measure-master/src/leaflet.measure.js"></script>
+
+  <!-- Carga de Datos Geográficos -->
+  <script src="capas_tren/vias_madrid.js"></script>
+  <script src="capas_tren/estaciones_madrid.js"></script>
+
+  <!-- Script Principal -->
+  <script src="script_vias.js"></script>
+  <script src="buscadores.js"></script>
+
+</body>
+</html>

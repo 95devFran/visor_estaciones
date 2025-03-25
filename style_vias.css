@@ -1,0 +1,114 @@
+/* Estilo general del mapa */
+#map {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  }
+  
+  /* Fondo oscuro tipo tecnología */
+  body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Popups con efecto digital */
+  .leaflet-popup-content-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    color: #0ff; /* Color cyan neón */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+  }
+  
+  .leaflet-popup-tip {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Personalizar los botones del control de capas */
+  .leaflet-control-layers {
+    background: rgba(20, 20, 20, 0.9);
+    color: #fff;
+    border: 1px solid #0ff;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.6);
+  }
+  
+  .leaflet-control-layers label {
+    color: #0ff;
+  }
+  
+  /* Cambiar los iconos de las estaciones */
+  .estacion-icon {
+    background-color: #0ff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+  }
+  
+  /* Cambiar el color de las vías */
+  .via-tren {
+    stroke: #ff0;
+    stroke-width: 3px;
+    opacity: 0.9;
+    filter: drop-shadow(0px 0px 5px yellow);
+  }
+  
+
+  /* Personalizar la apariencia de la barra de búsqueda */
+.leaflet-control-search {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+    color: #333; /* Color de texto oscuro para un buen contraste */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle algo de profundidad */
+  }
+  
+/* Estilo del campo de búsqueda */
+.leaflet-control-search input {
+    width: 250px; /* Ajustar el ancho para hacerlo más visible */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #fff; /* Cambiar el color del texto a blanco */
+    background-color: #333; /* Fondo oscuro para contraste */
+  }
+  
+/* Estilo para el botón de búsqueda con hover */
+.leaflet-control-search .search-button {
+  background: #1978cf; /* Fondo original del botón */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.leaflet-control-search .search-button:hover {
+  background: #0f60a0; /* Fondo de hover */
+  transform: scale(1.1); /* Efecto de escalado */
+  box-shadow: 0 4px 10px rgba(0, 120, 160, 0.5); /* Sombra sutil al hacer hover */
+}
+
+  
+  /* Personalizar los resultados de búsqueda */
+  .leaflet-control-search-results {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para que resalten los resultados */
+  }
+  
+  /* Cambiar el color de las letras al encontrar una ubicación */
+  .leaflet-control-search-results li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    color: #333; /* Color de texto más oscuro */
+    font-size: 14px;
+  }
+  
+  /* Cambiar el color del texto al pasar el ratón por encima */
+  .leaflet-control-search-results li:hover {
+    background-color: #5f0; /* Fondo verde brillante al pasar el ratón */
+    color: #fff; /* Texto blanco */
+  }
+  
