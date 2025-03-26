@@ -63,26 +63,44 @@
     padding: 5px;
     font-family: 'Tahoma', sans-serif;
     font-size: 14px;
-    color: #333; /* Color de texto oscuro para un buen contraste */
+    color: white; /* Color de texto oscuro para un buen contraste */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle algo de profundidad */
   }
   
 /* Estilo del campo de búsqueda */
+/* Estilo del campo de búsqueda */
 .leaflet-control-search input {
-    width: 250px; /* Ajustar el ancho para hacerlo más visible */
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    color: #fff; /* Cambiar el color del texto a blanco */
-    background-color: #333; /* Fondo oscuro para contraste */
-  }
+  width: 250px; /* Mantener un buen tamaño */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #0ff; /* Borde cian neón */
+  font-size: 14px;
+  color: #000; /* Texto oscuro para contrastar */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+}
+.leaflet-control-search input:focus {
+  background-color: white; /* Fondo blanco sólido al hacer clic */
+  border: 2px solid #0ff; /* Borde cian más brillante */
+  outline: none; /* Quita el borde azul predeterminado */
+}
+
   
 /* Estilo para el botón de búsqueda con hover */
 .leaflet-control-search .search-button {
-  background: #1978cf; /* Fondo original del botón */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  background: url("./leaflet-search-master/src/search_1.png") no-repeat center center;
+  background-size: 16px 16px; /* Ajusta el tamaño de la imagen */
+  width: 30px; /* Ajusta el tamaño del botón */
+  height: 30px;
+  border-radius: 50%; /* Mantiene la forma circular */
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  box-shadow: 0 2px 8px rgb(0, 127, 247); /* Sombra para darle algo de profundidad */
 }
+
 
 .leaflet-control-search .search-button:hover {
   background: #0f60a0; /* Fondo de hover */
