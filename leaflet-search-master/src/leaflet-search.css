@@ -16,7 +16,7 @@
   
   /* Estilo de la barra expandida */
   .leaflet-control-search.search-exp {
-	background: #333;
+	background: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
@@ -69,7 +69,7 @@
     float: left;
     width: 30px;
     height: 30px;
-    background: #1978cf;
+    background: transparent;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -92,11 +92,31 @@
 
   
  /* Eliminar el borde azul al hacer hover en el botón de búsqueda */
-.leaflet-control-search .search-button:focus, 
-.leaflet-control-search .search-button:hover {
-    outline: none; /* Elimina el contorno azul al hacer hover */
-    box-shadow: none; /* Elimina cualquier sombra que pueda aparecer */
+/* Botón de búsqueda con imagen personalizada */
+.leaflet-control-search .search-button {
+	display: block;
+	width: 30px; /* Tamaño del botón */
+	height: 30px;
+	background: url('./search_1.png') no-repeat center center; /* Ruta de la imagen */
+	background-size: contain; /* Ajusta la imagen dentro del botón */
+	border-radius: 50%; /* Mantiene un diseño circular */
+	border: none; /* Elimina bordes adicionales */
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+/* Efecto hover: agrandar ligeramente */
+.leaflet-control-search .search-button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Eliminar borde azul al hacer clic */
+.leaflet-control-search .search-button:focus {
+	outline: none;
+	box-shadow: none;
+}
+
 
   
   /* Tooltip de búsqueda */
