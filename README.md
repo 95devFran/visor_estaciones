@@ -20,10 +20,10 @@ Aplicación web para visualizar estaciones de tren y tramos de vía en un mapa i
 - JavaScript
 - [Leaflet.js](https://leafletjs.com/)
 
----
+---e
 
 ## 🛠️ Instalación y uso
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/95sFran/visor_estaciones.git
+   git clone https://github.com/95devFran/visor_estaciones.git
